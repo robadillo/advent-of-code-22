@@ -25,14 +25,14 @@ function calculateElvesCalories() {
     console.log('Max Calories: ', Math.max(...elves));
 
     let top = 0;
-    for (let j = 0; j < 3; j++) {
+    const numOfTop = 3;
+    for (let j = 0; j < numOfTop; j++) {
       var indexOfMax = elves.indexOf(Math.max(...elves));
-      // console.log(Math.max(...elves));
       top += elves[indexOfMax];
       elves.splice(indexOfMax, 1);
-      // console.log(top);
     } 
 
+    // Second question
     console.log('Sum of top Three: ', top);
   });  
 }
